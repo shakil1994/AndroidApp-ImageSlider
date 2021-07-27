@@ -10,6 +10,8 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.Toast;
@@ -59,7 +61,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        if (toggle.onOptionsItemSelected(item)){
+        if (toggle.onOptionsItemSelected(item)) {
             return true;
         }
         return super.onOptionsItemSelected(item);
@@ -67,13 +69,19 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
 
     @Override
     public boolean onNavigationItemSelected(@NonNull @NotNull MenuItem item) {
-        switch (item.getItemId()){
+        switch (item.getItemId()) {
             case R.id.navigation_restaurant:
-                Toast.makeText(this, "Restaurant", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(this, RestaurantActivity.class));
+                if (drawerLayout.isOpen()) {
+                    drawerLayout.close();
+                }
                 break;
 
             case R.id.navigation_art:
-                Toast.makeText(this, "Art", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(this, ArtActivity.class));
+                if (drawerLayout.isOpen()) {
+                    drawerLayout.close();
+                }
                 break;
 
             case R.id.navigation_project:
