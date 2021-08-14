@@ -15,7 +15,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ImageSliding"
         android:usesCleartextTraffic="true">
-        <activity android:name=".ArtActivity"></activity>
+        <activity android:name=".LandownerActivity"></activity>
+        <activity android:name=".ShowcaseActivity" />
+        <activity android:name=".OurStoryActivity" />
+        <activity android:name=".GreenActivity" />
+        <activity android:name=".BusinessActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".ArtActivity" />
         <activity android:name=".RestaurantActivity" />
         <activity android:name=".HomeActivity" />
         <activity android:name=".SplashScreenActivity">

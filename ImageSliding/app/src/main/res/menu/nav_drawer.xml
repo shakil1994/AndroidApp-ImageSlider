@@ -2,6 +2,36 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/navigation_business"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Business" />
+
+    <item
+        android:id="@+id/navigation_green"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Green" />
+
+    <item
+        android:id="@+id/navigation_our_story"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Our Story" />
+
+    <item
+        android:id="@+id/navigation_showcase"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Showcase" />
+
+    <item
+        android:id="@+id/navigation_landowner"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Landowner" />
+
+    <item
         android:id="@+id/navigation_restaurant"
         android:icon="@drawable/ic_baseline_home_24"
         android:title="Restaurant" />

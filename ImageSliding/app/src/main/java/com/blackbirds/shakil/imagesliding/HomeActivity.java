@@ -70,6 +70,48 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     @Override
     public boolean onNavigationItemSelected(@NonNull @NotNull MenuItem item) {
         switch (item.getItemId()) {
+            case R.id.navigation_home:
+                startActivity(new Intent(this, MainActivity.class));
+                if (drawerLayout.isOpen()) {
+                    drawerLayout.close();
+                }
+                break;
+
+            case R.id.navigation_business:
+                startActivity(new Intent(this, BusinessActivity.class));
+                if (drawerLayout.isOpen()) {
+                    drawerLayout.close();
+                }
+                break;
+
+            case R.id.navigation_green:
+                startActivity(new Intent(this, GreenActivity.class));
+                if (drawerLayout.isOpen()) {
+                    drawerLayout.close();
+                }
+                break;
+
+            case R.id.navigation_our_story:
+                startActivity(new Intent(this, OurStoryActivity.class));
+                if (drawerLayout.isOpen()) {
+                    drawerLayout.close();
+                }
+                break;
+
+            case R.id.navigation_showcase:
+                startActivity(new Intent(this, ShowcaseActivity.class));
+                if (drawerLayout.isOpen()) {
+                    drawerLayout.close();
+                }
+                break;
+
+            case R.id.navigation_landowner:
+                startActivity(new Intent(this, LandownerActivity.class));
+                if (drawerLayout.isOpen()) {
+                    drawerLayout.close();
+                }
+                break;
+
             case R.id.navigation_restaurant:
                 startActivity(new Intent(this, RestaurantActivity.class));
                 if (drawerLayout.isOpen()) {
@@ -86,10 +128,16 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
 
             case R.id.navigation_project:
                 Toast.makeText(this, "Project", Toast.LENGTH_SHORT).show();
+                if (drawerLayout.isOpen()) {
+                    drawerLayout.close();
+                }
                 break;
 
             case R.id.navigation_about:
                 Toast.makeText(this, "About", Toast.LENGTH_SHORT).show();
+                if (drawerLayout.isOpen()) {
+                    drawerLayout.close();
+                }
                 break;
         }
         return true;
