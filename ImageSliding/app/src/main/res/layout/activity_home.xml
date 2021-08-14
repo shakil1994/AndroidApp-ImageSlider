@@ -19,6 +19,7 @@
             android:layout_marginStart="0dp"
             android:layout_marginEnd="0dp"
             android:background="@drawable/bottom_navigation_background"
+            app:itemIconTint="@color/white"
             app:labelVisibilityMode="unlabeled"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -44,8 +45,11 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
+        android:background="@color/transparent"
         android:fitsSystemWindows="true"
+        app:itemIconTint="@color/white"
         app:itemTextAppearance="?android:attr/textAppearanceMedium"
+        app:itemTextColor="@color/white"
         app:menu="@menu/nav_drawer" />
 
 </androidx.drawerlayout.widget.DrawerLayout>

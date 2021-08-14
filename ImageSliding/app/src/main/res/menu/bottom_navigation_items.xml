@@ -12,6 +12,7 @@
         android:title="" />
 
     <item
+        android:iconTint="@color/white"
         android:id="@+id/navigation_exit"
         android:icon="@drawable/ic_baseline_exit_to_app_24"
         android:title="" />

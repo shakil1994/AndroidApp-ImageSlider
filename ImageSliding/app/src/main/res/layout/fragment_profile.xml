@@ -6,12 +6,12 @@
     tools:context=".Fragments.Profile.ProfileFragment">
 
     <TextView
-        android:gravity="center"
-        android:textSize="30sp"
-        android:textColor="@color/black"
-        android:background="@android:color/holo_red_dark"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Profile Fragment" />
+        android:background="@android:color/holo_red_dark"
+        android:gravity="center"
+        android:text="Profile Fragment"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
 
 </FrameLayout>

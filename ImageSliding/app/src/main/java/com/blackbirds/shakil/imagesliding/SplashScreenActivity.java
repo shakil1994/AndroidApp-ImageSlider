@@ -22,7 +22,8 @@ public class SplashScreenActivity extends AppCompatActivity {
     int[] imagesArray = {R.drawable.images1,
             R.drawable.images2,
             R.drawable.images3,
-            R.drawable.images4};
+            R.drawable.images4,
+            R.drawable.images5};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

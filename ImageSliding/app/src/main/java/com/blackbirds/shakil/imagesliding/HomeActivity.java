@@ -70,13 +70,6 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     @Override
     public boolean onNavigationItemSelected(@NonNull @NotNull MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.navigation_home:
-                startActivity(new Intent(this, MainActivity.class));
-                if (drawerLayout.isOpen()) {
-                    drawerLayout.close();
-                }
-                break;
-
             case R.id.navigation_business:
                 startActivity(new Intent(this, BusinessActivity.class));
                 if (drawerLayout.isOpen()) {
@@ -112,29 +105,8 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                 }
                 break;
 
-            case R.id.navigation_restaurant:
-                startActivity(new Intent(this, RestaurantActivity.class));
-                if (drawerLayout.isOpen()) {
-                    drawerLayout.close();
-                }
-                break;
-
-            case R.id.navigation_art:
-                startActivity(new Intent(this, ArtActivity.class));
-                if (drawerLayout.isOpen()) {
-                    drawerLayout.close();
-                }
-                break;
-
             case R.id.navigation_project:
                 Toast.makeText(this, "Project", Toast.LENGTH_SHORT).show();
-                if (drawerLayout.isOpen()) {
-                    drawerLayout.close();
-                }
-                break;
-
-            case R.id.navigation_about:
-                Toast.makeText(this, "About", Toast.LENGTH_SHORT).show();
                 if (drawerLayout.isOpen()) {
                     drawerLayout.close();
                 }

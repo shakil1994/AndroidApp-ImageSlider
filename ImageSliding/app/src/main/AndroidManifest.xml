@@ -20,9 +20,6 @@
         <activity android:name=".OurStoryActivity" />
         <activity android:name=".GreenActivity" />
         <activity android:name=".BusinessActivity" />
-        <activity android:name=".MainActivity" />
-        <activity android:name=".ArtActivity" />
-        <activity android:name=".RestaurantActivity" />
         <activity android:name=".HomeActivity" />
         <activity android:name=".SplashScreenActivity">
             <intent-filter>

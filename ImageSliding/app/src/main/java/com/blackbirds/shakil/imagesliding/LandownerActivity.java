@@ -24,9 +24,6 @@ public class LandownerActivity extends AppCompatActivity {
     WebView webView;
     private String webUrl = "https://baydevelopments.com/landowner/";
 
-    //AlertDialog dialog;
-    ProgressBar progressBarWeb;
-
     RelativeLayout relativeLayout;
     Button btnNoInternetConnection;
 
@@ -39,17 +36,6 @@ public class LandownerActivity extends AppCompatActivity {
         webView = findViewById(R.id.webView);
         relativeLayout = findViewById(R.id.relativeLayout);
         btnNoInternetConnection = findViewById(R.id.btnNoInternetConnection);
-        //swipeRefreshLayout = findViewById(R.id.swipeRefreshLayout);
-
-        progressBarWeb = findViewById(R.id.progressBar);
-
-        /*swipeRefreshLayout.setColorSchemeColors(Color.BLUE,Color.YELLOW,Color.GREEN);
-        swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
-            @Override
-            public void onRefresh() {
-                webView.reload();
-            }
-        });*/
 
         if (savedInstanceState != null) {
             webView.restoreState(savedInstanceState);
@@ -84,7 +70,6 @@ public class LandownerActivity extends AppCompatActivity {
 
             @Override
             public void onPageFinished(WebView view, String url) {
-                //swipeRefreshLayout.setRefreshing(false);
                 super.onPageFinished(view, url);
             }
 
@@ -98,20 +83,6 @@ public class LandownerActivity extends AppCompatActivity {
             public void onReceivedSslError(WebView view, SslErrorHandler handler, SslError error) {
                 handler.proceed(); // Ignore SSL certificate errors
             }
-        });
-
-        webView.setWebChromeClient(new WebChromeClient() {
-            @Override
-            public void onProgressChanged(WebView view, int newProgress) {
-                progressBarWeb.setVisibility(View.VISIBLE);
-                progressBarWeb.setProgress(newProgress);
-                //setTitle("Loading...");
-                if (newProgress == 100) {
-                    progressBarWeb.setVisibility(View.GONE);
-                }
-                super.onProgressChanged(view, newProgress);
-            }
-
         });
 
         btnNoInternetConnection.setOnClickListener(view -> checkConnection());
